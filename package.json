@@ -18,7 +18,7 @@
     "watch": "npm-run-all build -p watch:*",
     "watch:sass": "node-sass --output-style expanded --source-map true -o css sass --watch",
     "watch:autoprefixer": "onchange -d 100 'css/style.css' -- autoprefixer-cli -o 'css/style.prefixed.css' 'css/style.css'",
-    "watch:babel": "babel js/script.js  js/App.js js/User.js js/UsersList.js --watch --out-file build.js"
+    "watch:babel": "babel js/App.js js/User.js js/UsersList.js js/script.js --watch --out-file build.js"
   },
   "keywords": [],
   "author": "",
