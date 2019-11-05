@@ -21,8 +21,12 @@ class App extends React.Component {
     render() {
         return (
             <div>
+              <div className={"title"}>
+                <i className={"fab fa-github"}></i>
+                <span><b>U</b>ser <b>S</b>earcher</span>
+              </div>
               <form onSubmit={event => this.onSubmit(event)}>
-                <label htmlFor="searchText">Search by user name</label>
+                <label className={"label"} htmlFor="searchText">Search by user name</label>
                 <input
                   type="text"
                   id="searchText"

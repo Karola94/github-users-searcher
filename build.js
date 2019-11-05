@@ -52,13 +52,34 @@ var App = function (_React$Component) {
                 "div",
                 null,
                 React.createElement(
+                    "div",
+                    { className: "title" },
+                    React.createElement("i", { className: "fab fa-github" }),
+                    React.createElement(
+                        "span",
+                        null,
+                        React.createElement(
+                            "b",
+                            null,
+                            "U"
+                        ),
+                        "ser ",
+                        React.createElement(
+                            "b",
+                            null,
+                            "S"
+                        ),
+                        "earcher"
+                    )
+                ),
+                React.createElement(
                     "form",
                     { onSubmit: function onSubmit(event) {
                             return _this3.onSubmit(event);
                         } },
                     React.createElement(
                         "label",
-                        { htmlFor: "searchText" },
+                        { className: "label", htmlFor: "searchText" },
                         "Search by user name"
                     ),
                     React.createElement("input", {
@@ -100,7 +121,7 @@ var User = function (_React$Component) {
     value: function render() {
       return React.createElement(
         "div",
-        null,
+        { className: "user" },
         React.createElement("img", { src: this.props.user.avatar_url, style: { maxWidth: '100px' } }),
         React.createElement(
           "a",
